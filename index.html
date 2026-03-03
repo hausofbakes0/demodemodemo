@@ -569,7 +569,7 @@ function checkout(){
   const items=Object.values(cart);
   if(!items.length){showToast('Your cart is empty!');return;}
   const msg=encodeURIComponent("Hello Haus of Bakes! I'd like to order:\n"+items.map(i=>`• ${i.qty}x ${i.name} – Rs. ${i.price*i.qty}`).join('\n')+'\n\nTotal: Rs. '+items.reduce((s,i)=>s+i.price*i.qty,0).toLocaleString());
-  window.open('https://wa.me/9779800000000?text='+msg,'_blank');
+  window.open('https://wa.me/9779817542617?text='+msg,'_blank');
 }
 
 function showToast(msg){
